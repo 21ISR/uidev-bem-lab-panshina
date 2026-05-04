@@ -208,24 +208,24 @@ body {
 }
 
 /* STATS */
-.sTaT { 
+.stat { 
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     border-top: 1px solid rgba(255,255,255,0.08); 
     border-bottom: 1px solid rgba(255,255,255,0.08)
 }
 
-.sTaT .s_item { 
+.stat .s_item { 
     padding: 48px 40px; 
     border-right: 1px solid rgba(255,255,255,0.08); 
     text-align: center; 
 }
 
-.sTaT .s_item:last-child { 
+.stat .s_item:last-child { 
     border-right: none; 
 }
 
-.sTaT .s_item .bignumb { 
+.stat .s_item .bignumb { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 52px; 
     font-weight: 900; 
@@ -235,7 +235,7 @@ body {
     margin-bottom: 8px; 
 }
 
-.sTaT .s_item .smallt { 
+.stat .s_item .smallt { 
     font-size: 12px; 
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
