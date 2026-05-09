@@ -214,18 +214,17 @@ body {
     border-top: 1px solid rgba(255,255,255,0.08); 
     border-bottom: 1px solid rgba(255,255,255,0.08)
 }
-
-.stat .s_item { 
+.stat__facts { 
     padding: 48px 40px; 
     border-right: 1px solid rgba(255,255,255,0.08); 
     text-align: center; 
 }
 
-.stat .s_item:last-child { 
+.stat__facts:last-child { 
     border-right: none; 
 }
 
-.stat .s_item .bignumb { 
+.stat__facts .stat__number { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 52px; 
     font-weight: 900; 
@@ -235,7 +234,7 @@ body {
     margin-bottom: 8px; 
 }
 
-.stat .s_item .smallt { 
+.stat__facts .stat__label { 
     font-size: 12px; 
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
@@ -243,18 +242,18 @@ body {
 }
 
 /* COURSES */
-.CcC { 
+.courses { 
     padding: 100px 60px; 
 }
 
-.CcC .sec_head { 
+.courses .courses__header { 
     display: flex; 
     justify-content: space-between; 
     align-items: flex-end; 
     margin-bottom: 56px; 
 }
 
-.CcC .sec_head .sec_ttl { 
+.courses .courses__header .courses__title { 
     font-family: 'Unbounded', sans-serif; 
     font-size: clamp(32px, 4vw, 52px); 
     font-weight: 900; 
@@ -262,11 +261,11 @@ body {
     line-height: 1.1; 
 }
 
-.CcC .sec_head .sec_ttl span { 
+.courses .courses__header .courses__title span { 
     color: #ff3c5f; 
 }
 
-.CcC .sec_head .lnk1 { 
+.courses .courses__header .link-arrow { 
     color: #ff3c5f; 
     font-size: 13px; 
     font-weight: 700; 
@@ -277,13 +276,13 @@ body {
     padding-bottom: 2px; 
 }
 
-.CcC .gr1 { 
+.courses .card { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 2px; 
 }
 
-.CcC .gr1 .crd { 
+.courses .card .crd { 
     background: #1a1a2e; 
     padding: 40px 36px; 
     position: relative; 
@@ -292,11 +291,11 @@ body {
     cursor: pointer; 
 }
 
-.CcC .gr1 .crd:hover { 
+.courses .card .crd:hover { 
     transform: translateY(-4px); 
 }
 
-.CcC .gr1 .crd::before { 
+.courses .card .crd::before { 
     content: ''; 
     position: absolute; 
     top: 0; 
@@ -307,11 +306,11 @@ body {
     transition: height 0.3s; 
 }
 
-.CcC .gr1 .crd:hover::before { 
+.courses .card .crd:hover::before { 
     height: 100%; 
 }
 
-.CcC .gr1 .crd .ico_w { 
+.courses .card .crd .ico_w { 
     width: 52px; 
     height: 52px; 
     background: rgba(255,60,95,0.12); 
@@ -322,7 +321,7 @@ body {
     font-size: 24px; 
 }
 
-.CcC .gr1 .crd .crd_t { 
+.courses .card .crd .crd_t { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 20px; 
     font-weight: 700; 
@@ -330,14 +329,14 @@ body {
     letter-spacing: -0.5px; 
 }
 
-.CcC .gr1 .crd .crd_d { 
+.courses .card .crd .crd_d { 
     font-size: 14px; 
     line-height: 1.7; 
     opacity: 0.6; 
     margin-bottom: 28px; 
 }
 
-.CcC .gr1 .crd .crd_meta { 
+.courses .card .crd .crd_meta { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -345,14 +344,14 @@ body {
     border-top: 1px solid rgba(255,255,255,0.08); 
 }
 
-.CcC .gr1 .crd .crd_meta .lvl { 
+.courses .card .crd .crd_meta .lvl { 
     font-size: 11px; 
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
     opacity: 0.45; 
 }
 
-.CcC .gr1 .crd .crd_meta .pr { 
+.courses .card .crd .crd_meta .pr { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 18px; 
     font-weight: 900; 
