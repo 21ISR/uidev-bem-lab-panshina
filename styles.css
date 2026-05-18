@@ -276,13 +276,13 @@ body {
     padding-bottom: 2px; 
 }
 
-.courses .card { 
+.courses .courses__grid { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 2px; 
 }
 
-.courses .card .card__icon { 
+.courses .courses__grid .card { 
     background: #1a1a2e; 
     padding: 40px 36px; 
     position: relative; 
@@ -291,11 +291,11 @@ body {
     cursor: pointer; 
 }
 
-.courses .card .card__icon:hover { 
+.courses .courses__grid .card:hover { 
     transform: translateY(-4px); 
 }
 
-.courses .card .card__icon::before { 
+.courses .courses__grid .card::before { 
     content: ''; 
     position: absolute; 
     top: 0; 
@@ -306,11 +306,11 @@ body {
     transition: height 0.3s; 
 }
 
-.courses .card .card__icon:hover::before { 
+.courses .courses__grid .card:hover::before { 
     height: 100%; 
 }
 
-.courses .card .card__icon .ico_w { 
+.courses .courses__grid .card .card__icon { 
     width: 52px; 
     height: 52px; 
     background: rgba(255,60,95,0.12); 
@@ -321,7 +321,7 @@ body {
     font-size: 24px; 
 }
 
-.courses .card .card__icon .crd_t { 
+.courses .courses__grid .card .card__title { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 20px; 
     font-weight: 700; 
@@ -329,14 +329,14 @@ body {
     letter-spacing: -0.5px; 
 }
 
-.courses .card .card__icon .crd_d { 
+.courses .courses__grid .card .card__text { 
     font-size: 14px; 
     line-height: 1.7; 
     opacity: 0.6; 
     margin-bottom: 28px; 
 }
 
-.courses .card .card__icon .crd_meta { 
+.courses .courses__grid .card .card__footer { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -344,14 +344,14 @@ body {
     border-top: 1px solid rgba(255,255,255,0.08); 
 }
 
-.courses .card .card__icon .crd_meta .lvl { 
+.courses .courses__grid .card .card__footer .card__level { 
     font-size: 11px; 
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
     opacity: 0.45; 
 }
 
-.courses .card .card__icon .crd_meta .pr { 
+.courses .courses__grid .card .card__footer .card__price { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 18px; 
     font-weight: 900; 
@@ -359,14 +359,14 @@ body {
 }
 
 /* FEATURED */
-.FtFt { 
+.featured { 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     min-height: 500px; 
     border-top: 1px solid rgba(255,255,255,0.08); 
 }
 
-.FtFt .left_p { 
+.featured .featured__left { 
     background: #ff3c5f; 
     padding: 80px 60px; 
     display: flex; 
@@ -374,7 +374,7 @@ body {
     justify-content: space-between; 
 }
 
-.FtFt .left_p .bigq { 
+.featured .featured__left .featured__quote { 
     font-family: 'Unbounded', sans-serif; 
     font-size: clamp(28px, 3vw, 48px); 
     font-weight: 900; 
@@ -383,13 +383,13 @@ body {
     color: #fff; 
 }
 
-.FtFt .left_p .auth_r { 
+.featured .featured__left .featured__author { 
     display: flex; 
     align-items: center; 
     gap: 16px; 
 }
 
-.FtFt .left_p .auth_r .ava { 
+.featured .featured__left .featured__author .featured__avatar { 
     width: 48px; 
     height: 48px; 
     border-radius: 50%; 
@@ -400,20 +400,20 @@ body {
     font-size: 20px; 
 }
 
-.FtFt .left_p .auth_r .auth_inf .auth_nm { 
+.featured .featured__left .featured__author .featured__author-info .featured__author-name { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 14px; 
     font-weight: 700; 
     color: #fff; 
 }
 
-.FtFt .left_p .auth_r .auth_inf .auth_pos { 
+.featured .featured__left .featured__author .featured__author-info .featured__author-position { 
     font-size: 12px; 
     color: rgba(255,255,255,0.65); 
     margin-top: 2px; 
 }
 
-.FtFt .right_p { 
+.featured .featured__right { 
     padding: 80px 60px; 
     background: #1a1a2e; 
     display: flex; 
@@ -421,7 +421,7 @@ body {
     justify-content: center; 
 }
 
-.FtFt .right_p .r_tag { 
+.featured .featured__right .r_tag { 
     font-size: 11px; 
     letter-spacing: 2px; 
     text-transform: uppercase; 
@@ -430,7 +430,7 @@ body {
     margin-bottom: 24px; 
 }
 
-.FtFt .right_p h3 { 
+.featured .featured__right h3 { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 36px; 
     font-weight: 900; 
@@ -438,21 +438,21 @@ body {
     margin-bottom: 20px; 
 }
 
-.FtFt .right_p p { 
+.featured .featured__right p { 
     font-size: 15px; 
     line-height: 1.75; 
     opacity: 0.6; 
     margin-bottom: 36px; 
 }
 
-.FtFt .right_p .list_f { 
+.featured .featured__right .list_f { 
     list-style: none; 
     display: flex; 
     flex-direction: column; 
     gap: 12px; 
 }
 
-.FtFt .right_p .list_f li { 
+.featured .featured__right .list_f li { 
     display: flex; 
     align-items: center; 
     gap: 12px; 
@@ -460,7 +460,7 @@ body {
     opacity: 0.8; 
 }
 
-.FtFt .right_p .list_f li::before { 
+.featured .featured__right .list_f li::before { 
     content: '♪'; 
     color: #ff3c5f; 
     font-size: 16px; 
