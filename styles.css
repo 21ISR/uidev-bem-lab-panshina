@@ -282,7 +282,7 @@ body {
     gap: 2px; 
 }
 
-.courses .card .crd { 
+.courses .card .card__icon { 
     background: #1a1a2e; 
     padding: 40px 36px; 
     position: relative; 
@@ -291,11 +291,11 @@ body {
     cursor: pointer; 
 }
 
-.courses .card .crd:hover { 
+.courses .card .card__icon:hover { 
     transform: translateY(-4px); 
 }
 
-.courses .card .crd::before { 
+.courses .card .card__icon::before { 
     content: ''; 
     position: absolute; 
     top: 0; 
@@ -306,11 +306,11 @@ body {
     transition: height 0.3s; 
 }
 
-.courses .card .crd:hover::before { 
+.courses .card .card__icon:hover::before { 
     height: 100%; 
 }
 
-.courses .card .crd .ico_w { 
+.courses .card .card__icon .ico_w { 
     width: 52px; 
     height: 52px; 
     background: rgba(255,60,95,0.12); 
@@ -321,7 +321,7 @@ body {
     font-size: 24px; 
 }
 
-.courses .card .crd .crd_t { 
+.courses .card .card__icon .crd_t { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 20px; 
     font-weight: 700; 
@@ -329,14 +329,14 @@ body {
     letter-spacing: -0.5px; 
 }
 
-.courses .card .crd .crd_d { 
+.courses .card .card__icon .crd_d { 
     font-size: 14px; 
     line-height: 1.7; 
     opacity: 0.6; 
     margin-bottom: 28px; 
 }
 
-.courses .card .crd .crd_meta { 
+.courses .card .card__icon .crd_meta { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -344,14 +344,14 @@ body {
     border-top: 1px solid rgba(255,255,255,0.08); 
 }
 
-.courses .card .crd .crd_meta .lvl { 
+.courses .card .card__icon .crd_meta .lvl { 
     font-size: 11px; 
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
     opacity: 0.45; 
 }
 
-.courses .card .crd .crd_meta .pr { 
+.courses .card .card__icon .crd_meta .pr { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 18px; 
     font-weight: 900; 
