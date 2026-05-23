@@ -13,25 +13,25 @@
     </head>
     <body>
         <!-- НАВИГАЦИЯ -->
-        <nav class="header">
-            <div class="header__logo">
+        <nav class="nav">
+            <div class="nav__logo">
                 ЗВУ
-                <span class="header__logo-accent">К</span>
+                <span>К</span>
             </div>
-            <ul class="menu__list">
-                <li class="menu__item"><a href="#" class="menu__link">Курсы</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Преподаватели</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__item">Курсы</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Преподаватели</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Цены</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
             </ul>
-            <button class="button header__button">Начать бесплатно</button>
+            <button class="button button--primary nav__button">Начать бесплатно</button>
         </nav>
 
         <!-- HERO-СЕКЦИЯ -->
         <section class="hero">
             <div class="hero__content">
-                <span class="hero__label">Музыкальная школа нового поколения</span>
-                <h1 class="hero__heading">
+                <span class="hero__tag">Музыкальная школа нового поколения</span>
+                <h1 class="hero__title">
                     Учись играть
                     <span class="hero__title--accent">так, как чувствуешь.</span>
                 </h1>
@@ -115,14 +115,14 @@
         <!-- КУРСЫ -->
         <section class="courses">
             <div class="courses__header">
-                <h2 class="courses__title section-title">
+                <h2 class="courses__title">
                     Наши
                     <span>курсы</span>
                 </h2>
-                <a href="#" class="link-arrow">Все курсы →</a>
+                <a href="#" class="courses__link">Все курсы →</a>
             </div>
             <div class="courses__grid">
-                <div class="card">
+                <div class="card courses__card">
                     <div class="card__icon">🎸</div>
                     <div class="card__title">Электрогитара</div>
                     <p class="card__text">
@@ -134,7 +134,7 @@
                         <span class="card__price">3 900 ₽/мес</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card courses__card">
                     <div class="card__icon">🎹</div>
                     <div class="card__title">Фортепиано</div>
                     <p class="card__text">
@@ -146,7 +146,7 @@
                         <span class="card__price">4 200 ₽/мес</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card courses__card">
                     <div class="card__icon">🎤</div>
                     <div class="card__title">Вокал</div>
                     <p class="card__text">
@@ -158,7 +158,7 @@
                         <span class="card__price">3 500 ₽/мес</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card courses__card">
                     <div class="card__icon">🥁</div>
                     <div class="card__title">Барабаны</div>
                     <p class="card__text">
@@ -170,7 +170,7 @@
                         <span class="card__price">3 700 ₽/мес</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card courses__card">
                     <div class="card__icon">🎛️</div>
                     <div class="card__title">Звукозапись</div>
                     <p class="card__text">
@@ -182,7 +182,7 @@
                         <span class="card__price">5 100 ₽/мес</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card courses__card">
                     <div class="card__icon">🎻</div>
                     <div class="card__title">Скрипка</div>
                     <p class="card__text">
@@ -198,35 +198,35 @@
         </section>
 
         <!-- FEATURED БЛОК -->
-        <div class="featured">
-            <div class="featured__left">
-                <div class="featured__quote">
+        <div class="promo">
+            <div class="promo__left">
+                <div class="promo__quote">
                     «Впервые в жизни я написал свою песню — и сделал это уже на
                     третьем месяце обучения.»
                 </div>
                 <div class="featured__author">
                     <div class="featured__avatar">🧑</div>
-                    <div class="featured__author-info">
-                        <div class="featured__author-name">Артём Власов</div>
-                        <div class="featured__author-position">
+                    <div class="promo__author-info">
+                        <div class="promo__author-name">Артём Власов</div>
+                        <div class="promo__author-position">
                             Курс «Электрогитара», г. Москва
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="featured__right">
+            <div class="promo__right">
                 <div class="featured__tag">Почему выбирают нас</div>
-                <h3>Больше чем просто уроки</h3>
-                <p>
+                <h3 class="featured__title">Больше чем просто уроки</h3>
+                <p class="featured__description">
                     Мы создали экосистему, где каждый студент растёт быстро и не
                     бросает занятия на полпути.
                 </p>
-                <ul class="list_f">
-                    <li>Живые уроки с преподавателем 2 раза в неделю</li>
-                    <li>Персональный план обучения с первого дня</li>
-                    <li>Закрытое сообщество и разборы треков</li>
-                    <li>Запись всех уроков — смотри в любое время</li>
-                    <li>Сертификат по окончании курса</li>
+                <ul class="featured__advantages">
+                    <li class="promo__item">Живые уроки с преподавателем 2 раза в неделю</li>
+                    <li class="promo__item">Персональный план обучения с первого дня</li>
+                    <li class="promo__item">Закрытое сообщество и разборы треков</li>
+                    <li class="promo__item">Запись всех уроков — смотри в любое время</li>
+                    <li class="promo__item">Сертификат по окончании курса</li>
                 </ul>
             </div>
         </div>

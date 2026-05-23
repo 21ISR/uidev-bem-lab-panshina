@@ -12,7 +12,7 @@ body {
 }
 
 /* NAV */
-.header { 
+.nav { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -27,7 +27,7 @@ body {
     border-bottom: 1px solid rgba(255,255,255,0.06); 
 }
 
-.header__logo { 
+.nav__logo { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 22px; 
     font-weight: 900; 
@@ -35,17 +35,17 @@ body {
     letter-spacing: -0.5px; 
 }
 
-.header__logo-accent { 
+.nav__logo-accent { 
     color: #f5f0e8; 
 }
 
-.menu__list { 
+.nav__list { 
     display: flex; 
     gap: 36px; 
     list-style: none; 
 }
 
-.menu__link {
+.nav__link {
     color: #f5f0e8; 
     text-decoration: none; 
     font-size: 13px; 
@@ -56,7 +56,7 @@ body {
     transition: opacity 0.2s; 
 }
 
-.menu__link:hover { 
+.nav__link:hover { 
     opacity: 1; 
     color: #ff3c5f; 
 }
@@ -276,13 +276,13 @@ body {
     padding-bottom: 2px; 
 }
 
-.courses .courses__grid { 
+.courses .card { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 2px; 
 }
 
-.courses .courses__grid .card { 
+.courses .card .card__icon { 
     background: #1a1a2e; 
     padding: 40px 36px; 
     position: relative; 
@@ -291,11 +291,11 @@ body {
     cursor: pointer; 
 }
 
-.courses .courses__grid .card:hover { 
+.courses .card .card__icon:hover { 
     transform: translateY(-4px); 
 }
 
-.courses .courses__grid .card::before { 
+.courses .card .card__icon::before { 
     content: ''; 
     position: absolute; 
     top: 0; 
@@ -306,11 +306,11 @@ body {
     transition: height 0.3s; 
 }
 
-.courses .courses__grid .card:hover::before { 
+.courses .card .card__icon:hover::before { 
     height: 100%; 
 }
 
-.courses .courses__grid .card .card__icon { 
+.courses .card .card__icon .ico_w { 
     width: 52px; 
     height: 52px; 
     background: rgba(255,60,95,0.12); 
@@ -321,7 +321,7 @@ body {
     font-size: 24px; 
 }
 
-.courses .courses__grid .card .card__title { 
+.courses .card .card__icon .crd_t { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 20px; 
     font-weight: 700; 
@@ -329,14 +329,14 @@ body {
     letter-spacing: -0.5px; 
 }
 
-.courses .courses__grid .card .card__text { 
+.courses .card .card__icon .crd_d { 
     font-size: 14px; 
     line-height: 1.7; 
     opacity: 0.6; 
     margin-bottom: 28px; 
 }
 
-.courses .courses__grid .card .card__footer { 
+.courses .card .card__icon .crd_meta { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -344,14 +344,14 @@ body {
     border-top: 1px solid rgba(255,255,255,0.08); 
 }
 
-.courses .courses__grid .card .card__footer .card__level { 
+.courses .card .card__icon .crd_meta .lvl { 
     font-size: 11px; 
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
     opacity: 0.45; 
 }
 
-.courses .courses__grid .card .card__footer .card__price { 
+.courses .card .card__icon .crd_meta .pr { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 18px; 
     font-weight: 900; 
@@ -359,14 +359,14 @@ body {
 }
 
 /* FEATURED */
-.featured { 
+.FtFt { 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     min-height: 500px; 
     border-top: 1px solid rgba(255,255,255,0.08); 
 }
 
-.featured .featured__left { 
+.FtFt .left_p { 
     background: #ff3c5f; 
     padding: 80px 60px; 
     display: flex; 
@@ -374,7 +374,7 @@ body {
     justify-content: space-between; 
 }
 
-.featured .featured__left .featured__quote { 
+.FtFt .left_p .bigq { 
     font-family: 'Unbounded', sans-serif; 
     font-size: clamp(28px, 3vw, 48px); 
     font-weight: 900; 
@@ -383,13 +383,13 @@ body {
     color: #fff; 
 }
 
-.featured .featured__left .featured__author { 
+.FtFt .left_p .auth_r { 
     display: flex; 
     align-items: center; 
     gap: 16px; 
 }
 
-.featured .featured__left .featured__author .featured__avatar { 
+.FtFt .left_p .auth_r .ava { 
     width: 48px; 
     height: 48px; 
     border-radius: 50%; 
@@ -400,20 +400,20 @@ body {
     font-size: 20px; 
 }
 
-.featured .featured__left .featured__author .featured__author-info .featured__author-name { 
+.FtFt .left_p .auth_r .auth_inf .auth_nm { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 14px; 
     font-weight: 700; 
     color: #fff; 
 }
 
-.featured .featured__left .featured__author .featured__author-info .featured__author-position { 
+.FtFt .left_p .auth_r .auth_inf .auth_pos { 
     font-size: 12px; 
     color: rgba(255,255,255,0.65); 
     margin-top: 2px; 
 }
 
-.featured .featured__right { 
+.FtFt .right_p { 
     padding: 80px 60px; 
     background: #1a1a2e; 
     display: flex; 
@@ -421,7 +421,7 @@ body {
     justify-content: center; 
 }
 
-.featured .featured__right .r_tag { 
+.FtFt .right_p .r_tag { 
     font-size: 11px; 
     letter-spacing: 2px; 
     text-transform: uppercase; 
@@ -430,7 +430,7 @@ body {
     margin-bottom: 24px; 
 }
 
-.featured .featured__right h3 { 
+.FtFt .right_p h3 { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 36px; 
     font-weight: 900; 
@@ -438,21 +438,21 @@ body {
     margin-bottom: 20px; 
 }
 
-.featured .featured__right p { 
+.FtFt .right_p p { 
     font-size: 15px; 
     line-height: 1.75; 
     opacity: 0.6; 
     margin-bottom: 36px; 
 }
 
-.featured .featured__right .list_f { 
+.FtFt .right_p .list_f { 
     list-style: none; 
     display: flex; 
     flex-direction: column; 
     gap: 12px; 
 }
 
-.featured .featured__right .list_f li { 
+.FtFt .right_p .list_f li { 
     display: flex; 
     align-items: center; 
     gap: 12px; 
@@ -460,7 +460,7 @@ body {
     opacity: 0.8; 
 }
 
-.featured .featured__right .list_f li::before { 
+.FtFt .right_p .list_f li::before { 
     content: '♪'; 
     color: #ff3c5f; 
     font-size: 16px; 
