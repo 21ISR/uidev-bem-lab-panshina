@@ -477,7 +477,7 @@ body {
     margin-bottom: 64px; 
 }
 
-.teachers__header h2 { 
+.teachers__title { 
     font-family: 'Unbounded', sans-serif; 
     font-size: clamp(32px, 4vw, 52px); 
     font-weight: 900; 
@@ -485,11 +485,11 @@ body {
     margin-bottom: 16px; 
 }
 
-.teachers__header h2 span { 
+.teachers__title span { 
     color: #ff3c5f; 
 }
 
-.teachers__header p { 
+.teachers__text { 
     font-size: 16px; 
     opacity: 0.55; 
     max-width: 480px; 
@@ -559,7 +559,7 @@ body {
     margin-bottom: 64px; 
 }
 
-.reviews__header h2 { 
+.reviews__title { 
     font-family: 'Unbounded', sans-serif; 
     font-size: clamp(32px, 4vw, 52px); 
     font-weight: 900; 
@@ -567,11 +567,11 @@ body {
     margin-bottom: 12px; 
 }
 
-.reviews__header h2 span { 
+.reviews__titile span { 
     color: #ff3c5f; 
 }
 
-.reviews__header p { 
+.reviews__subtitle { 
     font-size: 15px; 
     opacity: 0.5; 
 }
@@ -582,7 +582,7 @@ body {
     gap: 2px; 
 }
 
-.reviews__item { 
+.reviews-card { 
     background: #1a1a2e; 
     padding: 36px 32px; 
     position: relative; 
@@ -605,13 +605,13 @@ body {
     margin-bottom: 28px; 
 }
 
-.reviews__auth { 
+.reviews-card__author { 
     display: flex; 
     align-items: center; 
     gap: 12px; 
 }
 
-.RvW .rv_grid .rv_item .rv_auth .rv_ava { 
+.reviews__avatar { 
     width: 40px; 
     height: 40px; 
     border-radius: 50%; 
@@ -622,19 +622,19 @@ body {
     font-size: 18px; 
 }
 
-.RvW .rv_grid .rv_item .rv_auth .rv_info .rv_nm { 
+.reviews__name { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 13px; 
     font-weight: 700; 
 }
 
-.RvW .rv_grid .rv_item .rv_auth .rv_info .rv_crs { 
+.reviews__course { 
     font-size: 11px; 
     color: #ff9f1c; 
     margin-top: 2px; 
 }
 
-.RvW .rv_grid .rv_item .stars { 
+.reviews__stars { 
     position: absolute; 
     top: 28px; 
     right: 28px; 
