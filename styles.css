@@ -35,7 +35,7 @@ body {
     letter-spacing: -0.5px; 
 }
 
-.nav__logo-accent { 
+.nav__logo span { 
     color: #f5f0e8; 
 }
 
@@ -74,7 +74,7 @@ body {
     cursor: pointer; 
     transition: background 0.2s, transform 0.15s; 
 }
-.button:hover { 
+.button--nav:hover { 
     background: #e0002e; 
     transform: translateY(-1px); 
 }
@@ -116,7 +116,7 @@ body {
     z-index: 2; 
 }
 
-.hero__content .hero__label { 
+.hero__tag { 
     display: inline-block; 
     border: 1px solid #ff3c5f; 
     color: #ff3c5f; 
@@ -128,7 +128,7 @@ body {
     margin-bottom: 28px; 
 }
 
-.hero__content h1 { 
+.hero__title { 
     font-family: 'Unbounded', sans-serif; 
     font-size: clamp(48px, 6vw, 88px); 
     font-weight: 900; 
@@ -137,7 +137,7 @@ body {
     margin-bottom: 28px; 
 }
 
-.hero__content h1 .hero__title--accent { 
+.hero__title--accent { 
     color: #ff3c5f; 
     display: block; 
 }
@@ -156,7 +156,7 @@ body {
     align-items: center; 
 }
 
-.hero__actions .button--primary { 
+.button--primary { 
     background: #ff3c5f; 
     color: #fff; 
     border: none; 
@@ -170,12 +170,12 @@ body {
     transition: all 0.2s; 
 }
 
-.hero__actions .button--primary:hover { 
+.button--primary:hover { 
     background: #e0002e; 
     transform: translateY(-2px); 
 }
 
-.hero__actions .button--video { 
+.button--video { 
     background: transparent; 
     color: #f5f0e8; 
     border: 1px solid rgba(255,255,255,0.25); 
@@ -189,7 +189,7 @@ body {
     transition: all 0.2s; 
 }
 
-.hero__actions .button--video:hover { 
+.button--video:hover { 
     border-color: #f5f0e8; 
 }
 
@@ -208,23 +208,23 @@ body {
 }
 
 /* STATS */
-.stat { 
+.stats-counter { 
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     border-top: 1px solid rgba(255,255,255,0.08); 
     border-bottom: 1px solid rgba(255,255,255,0.08)
 }
-.stat__facts { 
+.stats-counter__item { 
     padding: 48px 40px; 
     border-right: 1px solid rgba(255,255,255,0.08); 
     text-align: center; 
 }
 
-.stat__facts:last-child { 
+.stats-counter__item:last-child { 
     border-right: none; 
 }
 
-.stat__facts .stat__number { 
+.stats__number { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 52px; 
     font-weight: 900; 
@@ -234,7 +234,7 @@ body {
     margin-bottom: 8px; 
 }
 
-.stat__facts .stat__label { 
+.stats__label { 
     font-size: 12px; 
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
@@ -246,14 +246,14 @@ body {
     padding: 100px 60px; 
 }
 
-.courses .courses__header { 
+.courses__header { 
     display: flex; 
     justify-content: space-between; 
     align-items: flex-end; 
     margin-bottom: 56px; 
 }
 
-.courses .courses__header .courses__title { 
+.courses__title { 
     font-family: 'Unbounded', sans-serif; 
     font-size: clamp(32px, 4vw, 52px); 
     font-weight: 900; 
@@ -261,11 +261,11 @@ body {
     line-height: 1.1; 
 }
 
-.courses .courses__header .courses__title span { 
+.courses__title span { 
     color: #ff3c5f; 
 }
 
-.courses .courses__header .link-arrow { 
+.courses__link { 
     color: #ff3c5f; 
     font-size: 13px; 
     font-weight: 700; 
@@ -276,13 +276,13 @@ body {
     padding-bottom: 2px; 
 }
 
-.courses .card { 
+.courses__grid { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 2px; 
 }
 
-.courses .card .card__icon { 
+.courses-card { 
     background: #1a1a2e; 
     padding: 40px 36px; 
     position: relative; 
@@ -291,11 +291,11 @@ body {
     cursor: pointer; 
 }
 
-.courses .card .card__icon:hover { 
+.courses-card:hover:hover { 
     transform: translateY(-4px); 
 }
 
-.courses .card .card__icon::before { 
+.courses-card::before { 
     content: ''; 
     position: absolute; 
     top: 0; 
@@ -306,11 +306,11 @@ body {
     transition: height 0.3s; 
 }
 
-.courses .card .card__icon:hover::before { 
+.courses-card:hover::before { 
     height: 100%; 
 }
 
-.courses .card .card__icon .ico_w { 
+.card__icon { 
     width: 52px; 
     height: 52px; 
     background: rgba(255,60,95,0.12); 
@@ -321,7 +321,7 @@ body {
     font-size: 24px; 
 }
 
-.courses .card .card__icon .crd_t { 
+.card__title { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 20px; 
     font-weight: 700; 
@@ -329,14 +329,14 @@ body {
     letter-spacing: -0.5px; 
 }
 
-.courses .card .card__icon .crd_d { 
+.card__text { 
     font-size: 14px; 
     line-height: 1.7; 
     opacity: 0.6; 
     margin-bottom: 28px; 
 }
 
-.courses .card .card__icon .crd_meta { 
+.card__footer { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
@@ -344,14 +344,14 @@ body {
     border-top: 1px solid rgba(255,255,255,0.08); 
 }
 
-.courses .card .card__icon .crd_meta .lvl { 
+.card__level { 
     font-size: 11px; 
     letter-spacing: 1.5px; 
     text-transform: uppercase; 
     opacity: 0.45; 
 }
 
-.courses .card .card__icon .crd_meta .pr { 
+.card__price { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 18px; 
     font-weight: 900; 
@@ -359,14 +359,14 @@ body {
 }
 
 /* FEATURED */
-.FtFt { 
+.promo { 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     min-height: 500px; 
     border-top: 1px solid rgba(255,255,255,0.08); 
 }
 
-.FtFt .left_p { 
+.promo__left { 
     background: #ff3c5f; 
     padding: 80px 60px; 
     display: flex; 
@@ -374,7 +374,7 @@ body {
     justify-content: space-between; 
 }
 
-.FtFt .left_p .bigq { 
+.promo__quote { 
     font-family: 'Unbounded', sans-serif; 
     font-size: clamp(28px, 3vw, 48px); 
     font-weight: 900; 
@@ -383,13 +383,13 @@ body {
     color: #fff; 
 }
 
-.FtFt .left_p .auth_r { 
+.promo__author { 
     display: flex; 
     align-items: center; 
     gap: 16px; 
 }
 
-.FtFt .left_p .auth_r .ava { 
+.promo__avatar { 
     width: 48px; 
     height: 48px; 
     border-radius: 50%; 
@@ -400,20 +400,20 @@ body {
     font-size: 20px; 
 }
 
-.FtFt .left_p .auth_r .auth_inf .auth_nm { 
+.promo__author-name { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 14px; 
     font-weight: 700; 
     color: #fff; 
 }
 
-.FtFt .left_p .auth_r .auth_inf .auth_pos { 
+.promo__author-position { 
     font-size: 12px; 
     color: rgba(255,255,255,0.65); 
     margin-top: 2px; 
 }
 
-.FtFt .right_p { 
+.promo__right { 
     padding: 80px 60px; 
     background: #1a1a2e; 
     display: flex; 
@@ -421,7 +421,7 @@ body {
     justify-content: center; 
 }
 
-.FtFt .right_p .r_tag { 
+.promo__tag { 
     font-size: 11px; 
     letter-spacing: 2px; 
     text-transform: uppercase; 
@@ -430,7 +430,7 @@ body {
     margin-bottom: 24px; 
 }
 
-.FtFt .right_p h3 { 
+.promo__title { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 36px; 
     font-weight: 900; 
@@ -438,21 +438,21 @@ body {
     margin-bottom: 20px; 
 }
 
-.FtFt .right_p p { 
+.promo__text { 
     font-size: 15px; 
     line-height: 1.75; 
     opacity: 0.6; 
     margin-bottom: 36px; 
 }
 
-.FtFt .right_p .list_f { 
+.promo__list { 
     list-style: none; 
     display: flex; 
     flex-direction: column; 
     gap: 12px; 
 }
 
-.FtFt .right_p .list_f li { 
+.promo__item { 
     display: flex; 
     align-items: center; 
     gap: 12px; 
@@ -460,7 +460,7 @@ body {
     opacity: 0.8; 
 }
 
-.FtFt .right_p .list_f li::before { 
+.promo__item::before { 
     content: '♪'; 
     color: #ff3c5f; 
     font-size: 16px; 
