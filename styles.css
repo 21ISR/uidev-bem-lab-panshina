@@ -588,7 +588,7 @@ body {
     position: relative; 
 }
 
-.RvW .rv_grid .rv_item .q_mrk { 
+.reviews__marks { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 80px; 
     color: #ff3c5f; 
@@ -598,14 +598,14 @@ body {
     margin-bottom: 12px; 
 }
 
-.RvW .rv_grid .rv_item .rv_txt { 
+.reviews__text { 
     font-size: 15px; 
     line-height: 1.75; 
     opacity: 0.75; 
     margin-bottom: 28px; 
 }
 
-.RvW .rv_grid .rv_item .rv_auth { 
+.reviews__auth { 
     display: flex; 
     align-items: center; 
     gap: 12px; 
