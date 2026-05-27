@@ -576,13 +576,13 @@ body {
     opacity: 0.5; 
 }
 
-.reviews_grid { 
+.reviews__grid { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 2px; 
 }
 
-.RvW .rv_grid .rv_item { 
+.reviews__item { 
     background: #1a1a2e; 
     padding: 36px 32px; 
     position: relative; 
