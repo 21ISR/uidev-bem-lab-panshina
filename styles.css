@@ -467,17 +467,17 @@ body {
 }
 
 /* TEACHERS */
-.TcH { 
+.teachers { 
     padding: 100px 60px; 
     background: #1a1a2e; 
 }
 
-.TcH .hd2 { 
+.teachers__header { 
     text-align: center; 
     margin-bottom: 64px; 
 }
 
-.TcH .hd2 h2 { 
+.teachers__header h2 { 
     font-family: 'Unbounded', sans-serif; 
     font-size: clamp(32px, 4vw, 52px); 
     font-weight: 900; 
@@ -485,11 +485,11 @@ body {
     margin-bottom: 16px; 
 }
 
-.TcH .hd2 h2 span { 
+.teachers__header h2 span { 
     color: #ff3c5f; 
 }
 
-.TcH .hd2 p { 
+.teachers__header p { 
     font-size: 16px; 
     opacity: 0.55; 
     max-width: 480px; 
@@ -497,24 +497,24 @@ body {
     line-height: 1.7; 
 }
 
-.TcH .t_grid { 
+.teachers__grid { 
     display: grid; 
     grid-template-columns: repeat(4, 1fr); 
     gap: 24px; 
 }
 
-.TcH .t_grid .t_crd { 
+.techers-card { 
     background: #0a0a0f; 
     padding: 32px 24px; 
     text-align: center; 
     transition: transform 0.3s; 
 }
 
-.TcH .t_grid .t_crd:hover { 
+.teachers-card:hover { 
     transform: translateY(-6px); 
 }
 
-.TcH .t_grid .t_crd .t_ava { 
+.techers-card__icon { 
     width: 80px; 
     height: 80px; 
     border-radius: 50%; 
@@ -527,14 +527,14 @@ body {
     border: 2px solid rgba(255,60,95,0.2); 
 }
 
-.TcH .t_grid .t_crd .t_nm { 
+.techers-card__name { 
     font-family: 'Unbounded', sans-serif; 
     font-size: 16px; 
     font-weight: 700; 
     margin-bottom: 6px; 
 }
 
-.TcH .t_grid .t_crd .t_sp { 
+.techers-card__speciality { 
     font-size: 12px; 
     color: #ff3c5f; 
     font-weight: 600; 
@@ -543,23 +543,23 @@ body {
     margin-bottom: 16px; 
 }
 
-.TcH .t_grid .t_crd .t_exp { 
+.techers-card__info { 
     font-size: 13px; 
     opacity: 0.5; 
     line-height: 1.6; 
 }
 
 /* REVIEWS */
-.RvW { 
+.reviews { 
     padding: 100px 60px; 
 }
 
-.RvW .rw_hd { 
+.reviews__header { 
     text-align: center; 
     margin-bottom: 64px; 
 }
 
-.RvW .rw_hd h2 { 
+.reviews__header h2 { 
     font-family: 'Unbounded', sans-serif; 
     font-size: clamp(32px, 4vw, 52px); 
     font-weight: 900; 
@@ -567,16 +567,16 @@ body {
     margin-bottom: 12px; 
 }
 
-.RvW .rw_hd h2 span { 
+.reviews__header h2 span { 
     color: #ff3c5f; 
 }
 
-.RvW .rw_hd p { 
+.reviews__header p { 
     font-size: 15px; 
     opacity: 0.5; 
 }
 
-.RvW .rv_grid { 
+.reviews_grid { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
     gap: 2px; 
