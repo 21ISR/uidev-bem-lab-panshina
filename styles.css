@@ -713,7 +713,7 @@ body {
 }
 
 /* FOOTER */
-.fT { 
+.footer { 
     border-top: 1px solid rgba(255,255,255,0.08); 
     padding: 52px 60px; 
     display: flex; 
@@ -721,7 +721,7 @@ body {
     align-items: center; 
 }
 
-.fT .flogo { 
+.footer__logo { 
     font-family: 'Unbounded', sans-serif;
     font-size: 20px; 
     font-weight: 900; 
